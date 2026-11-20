@@ -1,0 +1,2 @@
+KLMS-Dict grid best {'sigma': np.float64(1.6583123951777), 'mu': 0.5, 'delta': 0.2, 'eps_q': 1.0, 'lam_t': 0.999, 'sn2': 0.1} 0.9433333333333334
+final {'sigma': np.float64(1.6583123951777), 'mu': 0.5, 'delta': 0.2, 'eps_q': np.float64(1.6583123951777), 'lam_t': 0.999, 'sn2': 0.01} FBQ 0.985 KRLST 0.99

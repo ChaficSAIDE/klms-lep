@@ -1,0 +1,8 @@
+                                 post  first300  dict_size  events
+bench D   method                                                  
+emg   160 ADWIN+Restart         0.911     0.865    141.176     4.2
+          KLMS-Dict (FIFO)      0.916     0.876    158.459     0.0
+          KLMS-LEP (proposed)   0.908     0.872    158.311   264.6
+          KRLS-T                0.943     0.890    159.184     0.0
+          LEP w/ FIFO eviction  0.913     0.876    157.263   499.8
+          LEP w/o pruning       0.906     0.869    158.459     0.0

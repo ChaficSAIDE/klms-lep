@@ -1,0 +1,62 @@
+                                      post  first300  dict_size  events
+bench      D   method                                                  
+partial100 10  ADWIN+Restart         0.609     0.606      9.988     0.0
+               KLMS-Dict (FIFO)      0.609     0.606      9.988     0.0
+               KLMS-LEP (proposed)   0.609     0.606      9.988     0.2
+               KRLS-T                0.663     0.571      9.990     0.0
+               LEP w/ FIFO eviction  0.609     0.606      9.988     0.2
+               LEP w/o pruning       0.609     0.606      9.988     0.0
+           20  ADWIN+Restart         0.737     0.707     19.946     0.0
+               KLMS-Dict (FIFO)      0.737     0.707     19.946     0.0
+               KLMS-LEP (proposed)   0.737     0.712     19.934    48.0
+               KRLS-T                0.835     0.672     19.958     0.0
+               LEP w/ FIFO eviction  0.739     0.710     19.933    48.6
+               LEP w/o pruning       0.738     0.710     19.946     0.0
+           40  ADWIN+Restart         0.826     0.714     39.267     1.3
+               KLMS-Dict (FIFO)      0.827     0.718     39.682     0.0
+               KLMS-LEP (proposed)   0.857     0.717     39.425   107.3
+               KRLS-T                0.857     0.709     39.827     0.0
+               LEP w/ FIFO eviction  0.825     0.709     39.572   102.4
+               LEP w/o pruning       0.851     0.702     39.682     0.0
+           80  ADWIN+Restart         0.825     0.684     46.961    12.8
+               KLMS-Dict (FIFO)      0.823     0.509     77.425     0.0
+               KLMS-LEP (proposed)   0.870     0.710     71.011   220.7
+               KRLS-T                0.862     0.692     79.298     0.0
+               LEP w/ FIFO eviction  0.867     0.700     71.265   216.0
+               LEP w/o pruning       0.827     0.515     77.425     0.0
+           160 ADWIN+Restart         0.825     0.684     46.961    12.8
+               KLMS-Dict (FIFO)      0.801     0.372    122.820     0.0
+               KLMS-LEP (proposed)   0.871     0.712     74.999   240.7
+               KRLS-T                0.860     0.656    157.173     0.0
+               LEP w/ FIFO eviction  0.871     0.712     74.999   240.7
+               LEP w/o pruning       0.802     0.372    122.820     0.0
+partial50  10  ADWIN+Restart         0.610     0.597      9.988     0.0
+               KLMS-Dict (FIFO)      0.610     0.597      9.988     0.0
+               KLMS-LEP (proposed)   0.610     0.597      9.988     0.0
+               KRLS-T                0.679     0.634      9.990     0.0
+               LEP w/ FIFO eviction  0.610     0.597      9.988     0.0
+               LEP w/o pruning       0.610     0.597      9.988     0.0
+           20  ADWIN+Restart         0.738     0.716     19.946     0.0
+               KLMS-Dict (FIFO)      0.738     0.716     19.946     0.0
+               KLMS-LEP (proposed)   0.738     0.719     19.935    43.8
+               KRLS-T                0.852     0.770     19.958     0.0
+               LEP w/ FIFO eviction  0.736     0.715     19.934    45.1
+               LEP w/o pruning       0.738     0.715     19.946     0.0
+           40  ADWIN+Restart         0.840     0.795     39.594     0.3
+               KLMS-Dict (FIFO)      0.841     0.796     39.682     0.0
+               KLMS-LEP (proposed)   0.874     0.823     39.587    82.1
+               KRLS-T                0.875     0.800     39.827     0.0
+               LEP w/ FIFO eviction  0.840     0.791     39.619    84.4
+               LEP w/o pruning       0.873     0.816     39.682     0.0
+           80  ADWIN+Restart         0.839     0.743     49.817    11.5
+               KLMS-Dict (FIFO)      0.863     0.701     77.425     0.0
+               KLMS-LEP (proposed)   0.887     0.815     74.646   183.5
+               KRLS-T                0.882     0.794     79.298     0.0
+               LEP w/ FIFO eviction  0.887     0.813     74.631   183.3
+               LEP w/o pruning       0.870     0.733     77.425     0.0
+           160 ADWIN+Restart         0.839     0.746     48.898    11.9
+               KLMS-Dict (FIFO)      0.860     0.643    123.613     0.0
+               KLMS-LEP (proposed)   0.891     0.818     80.776   217.7
+               KRLS-T                0.884     0.782    157.173     0.0
+               LEP w/ FIFO eviction  0.891     0.818     80.776   217.7
+               LEP w/o pruning       0.860     0.644    123.613     0.0
