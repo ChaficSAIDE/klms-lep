@@ -1,4 +1,4 @@
-"""LaTeX tables from results/*.csv (writes ../paper/tab_*.tex)."""
+"""LaTeX tables from results/*.csv (writes ../tables/tab_*.tex)."""
 import os
 import numpy as np
 import pandas as pd
@@ -6,7 +6,8 @@ from scipy.stats import wilcoxon
 import bench
 
 R = bench.OUT
-P = os.path.join(bench.HERE, "..", "paper")
+P = os.path.join(bench.HERE, "..", "tables")
+os.makedirs(P, exist_ok=True)
 PROP = "KLMS-LEP (proposed)"
 ORDER = ["KLMS-Dict (FIFO)", "KLMS-Dict (4x)", "FB-QKLMS", "SW-KRLS", "KRLS-T",
          "ADWIN+Restart", "KLMS-DriftDict", PROP]
@@ -148,6 +149,8 @@ def inline(tex="main_access.tex"):
     """Refresh the tables inlined in the paper between % BEGIN/% END markers."""
     import re
     f = os.path.join(P, tex)
+    if not os.path.exists(f):
+        return  # the paper source is not part of this repository
     s = open(f).read()
     def rep(m):
         return "% BEGIN " + m.group(1) + "\n" + open(os.path.join(P, m.group(1))).read().rstrip("\n") + "\n% END " + m.group(1)
