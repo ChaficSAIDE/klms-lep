@@ -145,7 +145,7 @@ def tab_largebudget():
     open(os.path.join(P, "tab_large.tex"), "w").write("\n".join(rows) + "\n")
 
 
-def inline(tex="main_access.tex"):
+def inline(tex="main_sigpro.tex"):
     """Refresh the tables inlined in the paper between % BEGIN/% END markers."""
     import re
     f = os.path.join(P, tex)

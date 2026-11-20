@@ -19,7 +19,7 @@ STY = {"KLMS-Dict (FIFO)": ("#7f7f7f", "--"), "ADWIN+Restart": ("#9467bd", ":"),
        "FB-QKLMS": ("#2ca02c", (0, (3, 1, 1, 1))), "KLMS-Dict (4x)": ("#d62728", (0, (5, 2)))}
 LBL = {"KLMS-LEP (proposed)": "KLMS-LEP (proposed)", "KLMS-Dict (FIFO)": "KLMS-Dict (FIFO)",
        "KLMS-Dict (4x)": "KLMS-Dict (4$\\times$ budget)"}
-W1 = 3.45  # IEEE column width (in)
+W1 = 3.45  # figure width (in)
 
 
 def smooth(c, w=100):
