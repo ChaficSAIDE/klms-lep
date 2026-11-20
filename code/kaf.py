@@ -101,7 +101,7 @@ class ADWINRestart(_DictKLMS):
 
 
 class DriftDict(_DictKLMS):
-    """Original KLMS-DriftDict (SPL submission): ADWIN alarm -> prune the
+    """KLMS-DriftDict baseline: ADWIN alarm -> prune the
     fraction p of atoms with lowest recency-relevance score."""
 
     def __init__(self, dim, adwin_delta=0.002, alpha=0.5, p=0.4, L=50, **kw):
