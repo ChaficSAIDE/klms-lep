@@ -1,4 +1,4 @@
-"""Figures for the revised paper (writes PDFs to ../paper/)."""
+"""Figures for the revised paper (writes PDFs to ../figures/)."""
 import os, json
 import numpy as np
 import pandas as pd
@@ -9,7 +9,8 @@ from multiprocessing import Pool
 import bench, kaf, streams
 
 R = bench.OUT
-P_OUT = os.path.join(bench.HERE, "..", "paper")
+P_OUT = os.path.join(bench.HERE, "..", "figures")
+os.makedirs(P_OUT, exist_ok=True)
 plt.rcParams.update({"font.size": 8, "axes.labelsize": 8, "legend.fontsize": 7,
                      "xtick.labelsize": 7, "ytick.labelsize": 7, "lines.linewidth": 1.2,
                      "pdf.fonttype": 42})
@@ -18,7 +19,7 @@ STY = {"KLMS-Dict (FIFO)": ("#7f7f7f", "--"), "ADWIN+Restart": ("#9467bd", ":"),
        "FB-QKLMS": ("#2ca02c", (0, (3, 1, 1, 1))), "KLMS-Dict (4x)": ("#d62728", (0, (5, 2)))}
 LBL = {"KLMS-LEP (proposed)": "KLMS-LEP (proposed)", "KLMS-Dict (FIFO)": "KLMS-Dict (FIFO)",
        "KLMS-Dict (4x)": "KLMS-Dict (4$\\times$ budget)"}
-W1 = 3.45  # IEEE column width (in)
+W1 = 3.45  # figure width (in)
 
 
 def smooth(c, w=100):

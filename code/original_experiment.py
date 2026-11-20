@@ -1,12 +1,8 @@
 """
-KLMS-DriftDict Experiment (Vectorized)
-=======================================
-Paper: Online Kernel Adaptive Filtering with Drift-Triggered Dictionary Pruning
-       for Non-Stationary Pattern Recognition
-Target: Pattern Recognition Letters (Elsevier)
-Author: Chafic Saide
+EMG and CWRU feature extraction, and the experiment for the
+ADWIN+RR-Prune (KLMS-DriftDict) baseline.
 
-Comparison (honest framing):
+Methods compared:
   - KLMS-Dict (large budget): accumulates stale atoms, high memory
   - SSW-KRLS: fixed sliding-window forgetting
   - ADWIN+Restart: detect drift, reset dictionary (too aggressive)
@@ -646,7 +642,7 @@ def main():
     except FileNotFoundError as e:
         print(f"  WARNING: {e}")
 
-    # -- EXP 3: EMG Physical Action (direct link to Chef's SPL paper) ------
+    # -- EXP 3: EMG Physical Action ------
     print("\n" + "="*62)
     print("  EXP 3: EMG Physical Action -- Cross-Subject Drift (binary)")
     print("="*62)
@@ -694,7 +690,7 @@ def main():
         print(f"  WARNING: {e}")
         import traceback; traceback.print_exc()
 
-    print("\nDone. Figures saved to paper6_experiment/")
+    print("\nDone.")
 
 
 if __name__ == '__main__':
